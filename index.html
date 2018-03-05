@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Joe Nagel | Web Dev</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+	<div>
+		<h1> Welcome to Joe Nagel's Web Development Portfolio</h1>
+	</div>
+
+	<h2 id="countdown"> </h2>
+
+
+	<div>
+		<h2> Please stay tuned! This site will be up and running in short order!</h2>
+
+	</div>
+
+<script>
+
+// deadline date
+var countDownDate = new Date("Mar, 9 2018 20:00:00").getTime();
+
+// variable declarations
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+// timer calculations
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+// id declaration
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+// display when counter ends
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
+
+

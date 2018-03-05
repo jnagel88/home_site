@@ -1,0 +1,16 @@
+body {
+background-image: url('home_scr.jpg');
+background-size: cover;
+}
+
+h1 {
+	text-align: center;
+	color: lightGrey;
+	text-shadow: 5px 3px 3px black;
+}
+
+h2 {
+	text-align: center;
+	color: lightGrey;
+	text-shadow: 5px 3px 3px black;
+}
