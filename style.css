@@ -14,3 +14,11 @@ h2 {
 	color: lightGrey;
 	text-shadow: 5px 3px 3px black;
 }
+
+p {
+	color: lightGrey;
+}
+
+.lightGrey {
+	color: lightGray;
+}
