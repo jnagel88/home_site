@@ -1,66 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Joe Nagel | Web Dev</title>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	<title>Joe Nagel | Web Developer</title>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
-
+	<!-- Bootstrap Stylesheet link -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+
 <body>
+	<div class="container">
+		<div class="panel">
+			<h1 class="text-lg"> Hi, I'm Joe! :)</h1>
+		</div>
+		<br>
+		<div class="panel">
+			<h2>I create products & teams</h2>
+				<p>
+					I recently completed an 8 week code immersion bootcamp that focused on Ruby on rails, <Abbr title="Model, View, Controller">MVC</Abbr> Architecture, and <abbr title="Object-Oriented_Programming">OOP</abbr>. This has allowed me to continue to expand my passion for Logic and problem-solving. Prior to my bootcamp, I worked in the theatre industry where I lead many teams, worked directly with clients from a venue management perspective, and helped companies host the best events they could.
+				</p>
+		</div>
 
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Joe Nagel's Portfolio</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-         <li><a href="JN_WEB_DEV_RESUME.pdf" target="_blank">Resume</a></li>
-        <li><a href="https://jnagel88.github.io/JS_Pig_Dice_Game/" target="_blank">Pig Dice Game</a></li>
-        <li><a href="blog_coming_soon.html" target="_blank">Blog Project</a></li>
-        <li><a href="social_coming_soon.html" target="_blank">Social Media Project</a></li>
-      </ul>
-    </div>
-  </nav>
+		<div class="panel">
+			<h2>Projects I have worked on</h2>
+				<p>
+					<ul>
+						<li><a href="https://jnagel88.github.io/JS_Pig_Dice_Game/" target="_blank"><b>PIG Dice Game | JavaScript, HTML, CSS</b></a></li>
+							<p>
+								This project was part of a Udemy.com course I took on Javascript. It focused on Dom manipulation.
+							</p>
+						<li><a href="https://github.com/jnagel88/Politikin_blog" target="_blank"></a><b>Blog Project | Ruby on Rails, HTML, CSS, Bootstrap</b></li>
+							<p>
+								This project was part of my bootcamp at Tech Talent south. its goal was to explore the use of rails and some of its tools and gems. <small>(Note: Currently only the code is accessible. I will be deploying this live in the next couple of weeks)</small>
+							</p>
+						<li><a href="" target="_blank"></a><b>Social Media Project | Ruby on Rails, HTML, CSS, Bootstrap</b></li>
+							<p>
+								This project was part of my bootcamp at Tech Talent South. The end-goal was to recreate Twitter through the use of bootstrap <small>(Note: Currently only the code is accessible. I will be deploying this live in the next couple of weeks)</small>.
+							</p>
+					</ul>
+				</p>
+		</div>
 
-<h1 class="lightGrey">You want me on your team!</h1>
+		<div class="panel">
+			<h2>Where you can find me</h2>
+				<p>
+					<ul>
+						<li><a href="JN_WEB_DEV_RESUME.pdf" target="_blank">Print Resume</a></li>
+						<li><a href="https://www.linkedin.com/in/joenagel/" target="_blank">LinkedIn</a></li>
+						<li><a href="https://github.com/jnagel88" target="_blank">Github</a></li>
+					</ul>
+				</p>
+		</div>
 
-<h4 class="text-center lightGrey">Check out my resume and projects to see why</h4>
+		<div class="panel" style="display: none">
+			<h2>What people are saying about me</h2>
+			<blockquote class="well">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p> a person's name | <a href="">their companies name/link</a></p>
 
+			</blockquote>
 
-  <!-- <h2 id="countdown"></h2> -->
-  <script>
+			<blockquote class="well">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p> a person's name | <a href="">their companies name/link</a></p>
 
-    // deadline date
-    var countDownDate = new Date("Mar, 9 2018 20:00:00").getTime();
+			</blockquote>
 
-    // variable declarations
-    var x = setInterval(function() {
-      var now = new Date().getTime();
-      var distance = countDownDate - now;
+			<blockquote class="well">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p> a person's name | <a href="">their companies name/link</a></p>
 
-    // timer calculations
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // id declaration
-      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-
-    // display when counter ends
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-  </script>
-
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			</blockquote>
+		</div>
+	</div>
 
 </body>
 </html>
-
-
